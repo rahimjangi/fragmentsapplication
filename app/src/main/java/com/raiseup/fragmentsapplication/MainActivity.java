@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.frame_1,new FirstFragment());
         fragmentTransaction.commit();
-        System.out.println("First is up");
+        fragmentTransaction.addToBackStack(null);
 
         btn_replace.setOnClickListener(new View.OnClickListener() {
             @Override
